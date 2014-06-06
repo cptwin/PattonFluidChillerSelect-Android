@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFF" >
+
+        <ImageView style="@style/IconHeader"
+            android:id="@+id/imageView1"
+            android:src="@drawable/ic_header_icon" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/HeaderText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="Fluid Chiller Select"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#0979bf"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:layout_below="@+id/heading"
+        android:layout_above="@+id/buttons">
+                
+
+	    <TableRow style="@style/SectionDark" >
+	
+	        <ImageView
+	            style="@style/Icon"
+	            android:src="@drawable/ic_fluid_icon" />
+	
+	        <Spinner
+	            android:id="@+id/fluidSpinner"
+	            android:layout_width="match_parent"
+	            android:layout_height = "35dip"
+	            android:layout_gravity="center_vertical"
+	            android:layout_weight="1"
+	            android:layout_span="2"/>
+	
+	    </TableRow>
+	
+	    <TableRow style="@style/SectionLight" 
+	        android:id="@+id/tempInLayout">"
+	
+	        <ImageView style="@style/Icon"
+	            android:src="@drawable/ic_temp_in_icon" />
+	
+	        <TextView style="@style/Text"
+	            android:text="In (°C)" />
+	
+	        <EditText style="@style/Edit"
+	            android:id="@+id/tempInTextBox"
+	            android:inputType="number">
+	
+	            <requestFocus />
+	        </EditText>
+	    </TableRow>
+	
+	    <TableRow style="@style/SectionDark" 
+	        android:id="@+id/tempOutLayout">
+	
+	        <ImageView style="@style/Icon"
+	            android:src="@drawable/ic_temp_out_icon" />
+	
+	        <TextView style="@style/Text"
+	            android:text="Out (°C)" />
+	
+	        <EditText style="@style/Edit"
+	            android:id="@+id/tempOutTextBox"
+	            android:inputType="numberSigned" />
+	        
+	    </TableRow>
+	
+	    <TableRow style="@style/SectionLight"
+	        android:id="@+id/volumeLayout">
+	
+	        <ImageView style="@style/Icon"
+	            android:src="@drawable/ic_volume_icon" />
+	
+	        <TextView style="@style/Text"
+	            android:text="Vol. (ltr)" />
+	
+	        <EditText style="@style/Edit"
+	            android:id="@+id/volumeTextBox"
+	            android:inputType="number"  />
+	    </TableRow>
+	
+	    <TableRow style="@style/SectionDark"  
+	        android:id="@+id/runtimeLayout">
+	
+	        <ImageView style="@style/Icon"
+	            android:src="@drawable/ic_runtime_icon" />
+	
+	        <TextView style="@style/Text"
+	            android:text="Run (Hrs)" />
+	
+	        <EditText style="@style/Edit"
+	            android:id="@+id/runtimeTextBox"
+	            android:inputType="number"  />
+	    </TableRow>
+	
+	    <TableRow style="@style/SectionLight" >
+	
+	        <ImageView style="@style/Icon"
+	            android:src="@drawable/ic_capacity_icon" />
+	
+	        <TextView style="@style/Text"
+	            android:text="Cap. (kW)" />
+	
+	        <EditText style="@style/Edit"
+	            android:id="@+id/capacityTextBox"
+	            android:inputType="none"  />
+	
+	    </TableRow>
+	
+	    <TableRow style="@style/SectionDark" 
+	        android:id="@+id/modelLayout">
+	
+	        <ImageView style="@style/Icon"
+	            android:src="@drawable/ic_model_icon" />
+	
+	        <TextView style="@style/Text"
+	            android:text="Model" />
+	
+	        <EditText style="@style/Edit"
+	            android:id="@+id/modelTextBox"
+	            android:inputType="none" 
+	            android:editable="false" />
+	
+	    </TableRow>
+    
+ 	</TableLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF" 
+        android:layout_alignParentBottom="true">"
+
+        
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_reset"
+            android:layout_weight="0.33" >
+
+            <ImageButton
+                android:id="@+id/resetButton"
+                style="@style/Button"
+                android:src="@drawable/ic_reset_icon"
+                android:background="#ef201b" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_contact"
+            android:layout_weight="0.33" >
+
+            <ImageButton
+                android:id="@+id/phoneButton"
+                style="@style/Button"
+                android:src="@drawable/ic_phone_icon"
+                android:background="#3f9633" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_download"
+            android:layout_weight="0.33" >
+
+            <ImageButton
+                android:id="@+id/downloadButton"
+                style="@style/Button"        
+                android:src="@drawable/ic_download_icon" 
+                android:background="#009cdf"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

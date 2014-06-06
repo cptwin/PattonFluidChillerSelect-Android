@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFF" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            style="@style/IconHeader"
+            android:src="@drawable/ic_header_icon" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/HeaderText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="Fluid Chiller Select"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#0979bf"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/heading"
+        android:background="#242424"
+        android:fillViewport="true" >
+
+        <TableLayout
+            android:id="@+id/TableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TableRow
+                style="@style/ContactSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#242424"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/ContactText"
+                    android:layout_width="wrap_content"
+                    android:text="New Zealand"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </TableRow>
+
+            <TableRow
+                style="@style/ContactSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#242424"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewNZLPhone"
+                    style="@style/ContactText"
+                    android:layout_width="wrap_content"
+                    android:text="P : +64 9 573 0060"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/imageViewNZLPhone"
+                    style="@style/Icon"
+                    android:src="@drawable/ic_action_call" />
+            </TableRow>
+
+            <TableRow
+                style="@style/ContactSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#242424"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewNZLEmail"
+                    style="@style/ContactText"
+                    android:layout_width="wrap_content"
+                    android:text="E : sales@pattonnz.com"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/imageViewNZLEmail"
+                    style="@style/Icon"
+                    android:src="@drawable/ic_action_mail" />
+
+            </TableRow>
+
+            <TableRow
+                style="@style/ContactSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#242424"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewNZLWeb"
+                    style="@style/ContactText"
+                    android:layout_width="wrap_content"
+                    android:text="W : www.pattonnz.com"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/imageViewNZLWeb"
+                    style="@style/Icon"
+                    android:src="@drawable/ic_action_send" />
+
+            </TableRow>
+
+            <TableRow
+                style="@style/ContactSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#424242"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    style="@style/ContactText"
+                    android:layout_width="wrap_content"
+                    android:text="Australia"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </TableRow>
+
+            <TableRow
+                style="@style/ContactSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#424242"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewAUSPhone"
+                    style="@style/ContactText"
+                    android:layout_width="wrap_content"
+                    android:text="P : +61 7 3255 5933"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/imageViewAUSPhone"
+                    style="@style/Icon"
+                    android:src="@drawable/ic_action_call" />
+            </TableRow>
+
+            <TableRow
+                style="@style/ContactSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#424242"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewAUSEmail"
+                    style="@style/ContactText"
+                    android:layout_width="wrap_content"
+                    android:text="E : sales@pattonau.com"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/imageViewAUSEmail"
+                    style="@style/Icon"
+                    android:src="@drawable/ic_action_mail" />
+            </TableRow>
+
+            <TableRow
+                style="@style/ContactSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#424242"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewAUSWeb"
+                    style="@style/ContactText"
+                    android:layout_width="wrap_content"
+                    android:text="W : www.pattonau.com"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/imageViewAUSWeb"
+                    style="@style/Icon"
+                    android:src="@drawable/ic_action_send" />
+            </TableRow>
+
+            <TableRow
+                style="@style/ContactSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#242424"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    style="@style/ContactText"
+                    android:layout_width="wrap_content"
+                    android:text="Thailand"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </TableRow>
+
+            <TableRow
+                style="@style/ContactSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#242424"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewTHAPhone"
+                    style="@style/ContactText"
+                    android:layout_width="wrap_content"
+                    android:text="P : +66 2 7096991"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/imageViewTHAPhone"
+                    style="@style/Icon"
+                    android:src="@drawable/ic_action_call" />
+            </TableRow>
+
+            <TableRow
+                style="@style/ContactSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#242424"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewTHAEmail"
+                    style="@style/ContactText"
+                    android:layout_width="wrap_content"
+                    android:text="E : sales@pattonth.com"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/imageViewTHAEmail"
+                    style="@style/Icon"
+                    android:src="@drawable/ic_action_mail" />
+            </TableRow>
+
+            <TableRow
+                style="@style/ContactSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#242424"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewTHAWeb"
+                    style="@style/ContactText"
+                    android:layout_width="wrap_content"
+                    android:text="W : www.pattonth.com"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/imageViewTHAWeb"
+                    style="@style/Icon"
+                    android:src="@drawable/ic_action_send" />
+            </TableRow>
+
+            <TableRow
+                style="@style/ContactSection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#424242"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView09"
+                    style="@style/ContactText"
+                    android:layout_width="wrap_content"
+                    android:text="India"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </TableRow>
+
+            <TableRow
+                style="@style/ContactSection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#424242"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewINDPhone"
+                    style="@style/ContactText"
+                    android:layout_width="wrap_content"
+                    android:text="P : +91 120 4325001"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/imageViewINDPhone"
+                    style="@style/Icon"
+                    android:src="@drawable/ic_action_call" />
+
+            </TableRow>
+
+            <TableRow
+                style="@style/ContactSection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#424242"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewINDEmail"
+                    style="@style/ContactText"
+                    android:layout_width="wrap_content"
+                    android:text="E : sales@pattonin.com"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/imageViewINDEmail"
+                    style="@style/Icon"
+                    android:src="@drawable/ic_action_mail" />
+            </TableRow>
+
+            <TableRow
+                style="@style/ContactSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#424242"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewINDWeb"
+                    style="@style/ContactText"
+                    android:layout_width="wrap_content"
+                    android:text="W : www.pattonin.com"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/imageViewINDWeb"
+                    style="@style/Icon"
+                    android:src="@drawable/ic_action_send" />
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        
+    </style>
+    <style name="IconHeader" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    
+    <style name="ContactText" parent="AppTheme">
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">0.05</item>
+    </style>
+    
+    <style name="ContactSection" parent="AppTheme">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="Icon" parent="IconHeader">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_weight">0.1</item>
+    </style>
+    
+    <style name="HeaderText" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">0.05</item>
+    </style>
+    
+    <style name="Text" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">0.05</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+    <style name="Edit" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/edittext_rounded_corners</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">0.7</item>
+        <item name="android:textColor">#0979bf</item>
+    </style>
+    
+    <style name="Button" parent="AppTheme">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">0.3333</item>
+    </style>
+    
+    <style name="Section" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">11.11</item>
+    </style>
+    
+    <style name="SectionLight" parent="Section">
+        <item name="android:background">#00a1e1</item>
+    </style>
+    
+    <style name="SectionDark" parent="Section">
+        <item name="android:background">#0979bf</item>
+    </style>
+    
+    
+
+</resources>
